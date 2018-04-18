@@ -144,7 +144,7 @@ GEM
       tilt
     highline (1.6.21)
     htmlentities (4.3.4)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -264,6 +264,7 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    rmagick (2.16.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -445,6 +446,7 @@ DEPENDENCIES
   pundit (~> 1.1)
   rails (~> 5.1.6)
   redis (~> 4.0, >= 4.0.1)
+  rmagick (~> 2.16)
   rspec (~> 3.7)
   sass-rails (~> 5.0)
   selenium-webdriver
