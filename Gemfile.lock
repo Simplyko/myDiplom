@@ -1,4 +1,41 @@
 GIT
+  remote: https://github.com/globalize/globalize.git
+  revision: 55c9c7a6d94f5707c3ff72a318498c8c125287b1
+  specs:
+    globalize (5.1.0)
+      activemodel (>= 4.2, < 5.2)
+      activerecord (>= 4.2, < 5.2)
+      request_store (~> 1.0)
+
+GIT
+  remote: https://github.com/spree-contrib/spree_digital.git
+  revision: da7b0988acdf17737a644a28ba96a11f2d8e5523
+  specs:
+    spree_digital (3.3.0)
+      spree_api (>= 3.1.0, < 4.0)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+      spree_frontend (>= 3.1.0, < 4.0)
+
+GIT
+  remote: https://github.com/spree-contrib/spree_globalize.git
+  revision: 3986112f829ec58d75630731424b86d8314ca12e
+  branch: master
+  specs:
+    spree_globalize (3.3.1)
+      friendly_id-globalize
+      globalize
+      i18n_data
+      kaminari-i18n
+      rails
+      rails-i18n
+      routing-filter
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+      spree_i18n
+
+GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
   revision: 1303512023b11add2f0ec75be748f65fdfc9721d
   branch: master
@@ -8,6 +45,23 @@ GIT
       kaminari-i18n
       rails-i18n
       routing-filter
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+
+GIT
+  remote: https://github.com/spree-contrib/spree_reviews.git
+  revision: 5e7965f18d0610f9954728e1cb03970f1d2c8fef
+  specs:
+    spree_reviews (3.3.0)
+      spree_auth_devise (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+
+GIT
+  remote: https://github.com/spree-contrib/spree_static_content.git
+  revision: 3f6fdbfbdfbc449958707398d19dcd4aa0fdf037
+  specs:
+    spree_static_content (3.3.2)
       spree_core (>= 3.1.0, < 4.0)
       spree_extension
 
@@ -150,6 +204,8 @@ GEM
     ffi (1.9.23)
     friendly_id (5.2.3)
       activerecord (>= 4.0.0)
+    friendly_id-globalize (1.0.0.alpha3)
+      friendly_id (>= 5.2.0, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
@@ -281,6 +337,8 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redis (4.0.1)
+    request_store (1.4.1)
+      rack (>= 1.4)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -460,6 +518,7 @@ DEPENDENCIES
   elasticsearch (~> 6.0, >= 6.0.2)
   factory_bot (~> 4.8, >= 4.8.2)
   faker (~> 1.8, >= 1.8.7)
+  globalize!
   haml (~> 5.0, >= 5.0.4)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
@@ -480,8 +539,12 @@ DEPENDENCIES
   simplecov (~> 0.16.1)
   spree (~> 3.4.4)
   spree_auth_devise (~> 3.3)
+  spree_digital!
   spree_gateway (~> 3.3)
+  spree_globalize!
   spree_i18n!
+  spree_reviews!
+  spree_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
