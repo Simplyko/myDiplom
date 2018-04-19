@@ -62,7 +62,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'simple_enum', '~> 2.3', '>= 2.3.1'
 gem 'pundit', '~> 1.1'
-gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'elasticsearch', '~> 6.0', '>= 6.0.2'
@@ -70,3 +69,12 @@ gem 'rspec', '~> 3.7'
 gem 'faker', '~> 1.8', '>= 1.8.7'
 gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
+
+#Diplom gems
+
+gem 'spree', '~> 3.4.4'
+gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_gateway', '~> 3.3'
+gem 'bootstrap', '~>4.1.0'
+gem 'rmagick', '~> 2.16'
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: 'master'
