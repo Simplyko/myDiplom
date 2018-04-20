@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180417135505) do
+ActiveRecord::Schema.define(version: 20180419142152) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -141,6 +141,28 @@ ActiveRecord::Schema.define(version: 20180417135505) do
     t.datetime "updated_at", null: false
     t.index ["number"], name: "index_spree_customer_returns_on_number", unique: true
     t.index ["stock_location_id"], name: "index_spree_customer_returns_on_stock_location_id"
+  end
+
+  create_table "spree_digital_links", id: :serial, force: :cascade do |t|
+    t.integer "digital_id"
+    t.integer "line_item_id"
+    t.string "secret"
+    t.integer "access_counter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["digital_id"], name: "index_spree_digital_links_on_digital_id"
+    t.index ["line_item_id"], name: "index_spree_digital_links_on_line_item_id"
+    t.index ["secret"], name: "index_spree_digital_links_on_secret"
+  end
+
+  create_table "spree_digitals", id: :serial, force: :cascade do |t|
+    t.integer "variant_id"
+    t.string "attachment_file_name"
+    t.string "attachment_content_type"
+    t.integer "attachment_file_size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["variant_id"], name: "index_spree_digitals_on_variant_id"
   end
 
   create_table "spree_gateways", id: :serial, force: :cascade do |t|
@@ -1030,6 +1052,7 @@ ActiveRecord::Schema.define(version: 20180417135505) do
     t.datetime "updated_at", null: false
     t.datetime "discontinue_on"
     t.datetime "created_at", null: false
+    t.decimal "sale_price", precision: 8, scale: 2
     t.index ["deleted_at"], name: "index_spree_variants_on_deleted_at"
     t.index ["discontinue_on"], name: "index_spree_variants_on_discontinue_on"
     t.index ["is_master"], name: "index_spree_variants_on_is_master"
