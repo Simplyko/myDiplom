@@ -58,6 +58,14 @@ GIT
       spree_extension
 
 GIT
+  remote: https://github.com/spree-contrib/spree_slider.git
+  revision: 534fed21ae50a7ac44472f5884a7c1df981e4ef3
+  specs:
+    spree_slider (3.3.0)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+
+GIT
   remote: https://github.com/spree-contrib/spree_static_content.git
   revision: 3f6fdbfbdfbc449958707398d19dcd4aa0fdf037
   specs:
@@ -544,6 +552,7 @@ DEPENDENCIES
   spree_globalize!
   spree_i18n!
   spree_reviews!
+  spree_slider!
   spree_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)
