@@ -1,0 +1,6 @@
+ <% Spree::Product.all.order("avg_rating DESC").limit(5).each do |s| %>
+
+          <h1> <%= s.name %> </h1>            
+          <%= s.avg_rating %>
+
+<% end %>

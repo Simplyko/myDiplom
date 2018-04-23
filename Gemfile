@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -76,5 +76,15 @@ gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'bootstrap', '~>4.1.0'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+gem "letter_opener", :group => :development
 gem 'rmagick', '~> 2.16'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: 'master'
+gem 'paperclip'
+gem 'spree_digital', github: 'spree-contrib/spree_digital'
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+gem 'globalize', github: 'globalize/globalize'
+gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'spree_slider', github: 'spree-contrib/spree_slider'
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
