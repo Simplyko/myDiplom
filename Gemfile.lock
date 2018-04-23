@@ -49,6 +49,14 @@ GIT
       spree_extension
 
 GIT
+  remote: https://github.com/spree-contrib/spree_multi_currency.git
+  revision: fde4f7b1c7826d9ad935fa5fbcd12185487d63cb
+  specs:
+    spree_multi_currency (3.3.0.rc1)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_extension
+
+GIT
   remote: https://github.com/spree-contrib/spree_reviews.git
   revision: 5e7965f18d0610f9954728e1cb03970f1d2c8fef
   specs:
@@ -551,6 +559,7 @@ DEPENDENCIES
   spree_gateway (~> 3.3)
   spree_globalize!
   spree_i18n!
+  spree_multi_currency!
   spree_reviews!
   spree_slider!
   spree_static_content!
