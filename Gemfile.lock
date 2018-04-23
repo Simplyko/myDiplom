@@ -434,7 +434,7 @@ GEM
       tzinfo
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.9)
+    uglifier (4.1.10)
       execjs (>= 0.3.0, < 3)
     versioncake (3.3.0)
       actionpack (>= 3.2)
