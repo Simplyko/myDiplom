@@ -49,6 +49,12 @@ GIT
       spree_extension
 
 GIT
+  remote: https://github.com/spree-contrib/spree_mail_settings.git
+  revision: be7a9a9fa866054a81270f15e8e5fb289e80a9d7
+  specs:
+    spree_mail_settings (3.3.0)
+      spree_auth_devise (>= 3.1.0, < 4.0)
+      spree_backend (>= 3.1.0, < 4.0)
   remote: https://github.com/spree-contrib/spree_multi_currency.git
   revision: fde4f7b1c7826d9ad935fa5fbcd12185487d63cb
   specs:
@@ -80,7 +86,6 @@ GIT
     spree_static_content (3.3.2)
       spree_core (>= 3.1.0, < 4.0)
       spree_extension
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -259,6 +264,8 @@ GEM
       rails
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.6.0)
+      launchy (~> 2.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -538,12 +545,13 @@ DEPENDENCIES
   haml (~> 5.0, >= 5.0.4)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
+  letter_opener
   listen (>= 3.0.5, < 3.2)
   paperclip
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   pundit (~> 1.1)
-  rails (~> 5.1.6)
+  rails (~> 5.1.4)
   redis (~> 4.0, >= 4.0.1)
   rmagick (~> 2.16)
   rspec (~> 3.7)
@@ -557,6 +565,7 @@ DEPENDENCIES
   spree_auth_devise (~> 3.3)
   spree_digital!
   spree_gateway (~> 3.3)
+  spree_mail_settings!
   spree_globalize!
   spree_i18n!
   spree_multi_currency!
