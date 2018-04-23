@@ -430,7 +430,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.18)
   capybara-screenshot (~> 1.0, >= 1.0.18)
-  capybara-webkit (~> 1.15)
+  capybara-webkit (~> 1.15.0)
   coffee-rails (~> 4.2)
   database_cleaner (~> 1.6, >= 1.6.2)
   devise (~> 4.4, >= 4.4.3)

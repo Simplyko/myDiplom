@@ -40,7 +40,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'simplecov', '~> 0.16.1'
   gem 'capybara', '~> 2.18'
-  gem 'capybara-webkit', '~> 1.15'
+  gem 'capybara-webkit', '~> 1.15.0'
   gem 'capybara-screenshot', '~> 1.0', '>= 1.0.18'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2' 

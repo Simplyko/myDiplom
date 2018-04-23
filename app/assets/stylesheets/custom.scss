@@ -1,0 +1,31 @@
+#spree-header {
+  background-color: 'black';
+  margin-bottom: $line-height-computed;
+
+  #header {
+    background: rgba($gray-darker, 0.4);
+    padding: $line-height-computed 0;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      max-height: 50px;
+    }
+  }
+
+  .nav a {
+    color: white;
+
+    &:hover, &:focus {
+      background: rgba($gray-darker, 0.4);
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
