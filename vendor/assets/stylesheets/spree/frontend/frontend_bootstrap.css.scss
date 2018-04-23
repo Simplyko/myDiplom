@@ -3,7 +3,7 @@
 @import "bootstrap";
 
 #spree-header {
-  background-color: black;
+  background-color: #000424;
   margin-bottom: $line-height-computed;
 
   #header {
@@ -35,7 +35,7 @@
 }
 
 #spree-footer {
-  background: $gray-dark;
+  background: #000424;
   padding-top: $padding-base-horizontal;
   margin-top: $line-height-computed;
   color: white;
@@ -100,4 +100,10 @@ table {
 
 .save-user-address-wrapper {
   display: inline-block;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #E37222;
+    border-color: #E37222;
 }
