@@ -46,6 +46,8 @@ group :development, :test do
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2' 
   gem 'factory_bot', '~> 4.8', '>= 4.8.2'
   gem 'rspec', '~> 3.7'
+  gem 'ffaker', '~> 2.9.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
