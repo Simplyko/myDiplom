@@ -10,3 +10,4 @@
 
 //= require_tree .
 //= require spree/backend/spree_multi_currency
+//= require spree/backend/spree_reviews
