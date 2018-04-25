@@ -1,5 +1,4 @@
-module Spree
-  class HomeController < Spree::StoreController
+Spree::HomeController.class_eval do
 
       layout 'landing'
 
@@ -11,5 +10,4 @@ module Spree
         @products = @searcher.retrieve_products
         @taxonomies = Spree::Taxonomy.includes(root: :children)
      end
-  end
 end
