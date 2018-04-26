@@ -1,0 +1,58 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/vkonceropyatov/myDiplom/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/vkonceropyatov/myDiplom/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/vkonceropyatov/myDiplom/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/vkonceropyatov/myDiplom/app/overrides/auth_shared_login_bar.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/vkonceropyatov/myDiplom/app/controllers/spree/home_controller_decorator.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/vkonceropyatov/myDiplom/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/home/vkonceropyatov/myDiplom/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/vkonceropyatov/myDiplom/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/vkonceropyatov/myDiplom/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1524744030
+  }
+}
