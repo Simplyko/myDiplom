@@ -1,6 +1,5 @@
- <% Spree::Product.all.order("avg_rating DESC").limit(5).each do |s| %>
-
-          <h1> <%= s.name %> </h1>            
-          <%= s.avg_rating %>
-
+<% Spree::Product.all.order("avg_rating DESC").limit(5).each do |product| %>
+    <h1><%= link_to product.name, product_path(product.id) %> </h1>  
+         <%= image_tag (product.images.first.attachment.url(:large))%>
+    <br><%= product.avg_rating %>    
 <% end %>

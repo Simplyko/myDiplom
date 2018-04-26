@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'selenium-webdriver'
-  gem 'simplecov', '~> 0.16.1'
+  gem 'simplecov', require: false, group: :test
   gem 'capybara', '~> 2.18'
   gem 'capybara-webkit', '~> 1.15.0'
   gem 'capybara-screenshot', '~> 1.0', '>= 1.0.18'
