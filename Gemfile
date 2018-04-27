@@ -45,6 +45,9 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2' 
   gem 'factory_bot', '~> 4.8', '>= 4.8.2'
+  gem 'rspec', '~> 3.7'
+  gem 'ffaker', '~> 2.9.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
@@ -60,14 +63,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'simple_enum', '~> 2.3', '>= 2.3.1'
-gem 'pundit', '~> 1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
-gem 'elasticsearch', '~> 6.0', '>= 6.0.2'
-gem 'rspec', '~> 3.7'
-gem 'faker', '~> 1.8', '>= 1.8.7'
-gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 
 #Diplom gems
@@ -86,5 +83,4 @@ gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 gem 'globalize', github: 'globalize/globalize'
 gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
-gem 'spree_slider', github: 'spree-contrib/spree_slider'
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
