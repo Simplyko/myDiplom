@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/TrueSpeak/spree-blogging-spree.git
+  revision: 5da9aaa9d816972bbeb965ed9c24b8d65a5b62b2
+  specs:
+    spree_blogging_spree (3.0.0)
+      acts-as-taggable-on (~> 5.0)
+
+GIT
   remote: https://github.com/globalize/globalize.git
   revision: 8a193c1272c3640e516ef36ac78e5d634152d3a5
   specs:
@@ -37,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
-  revision: 94043a4b27be76249a1d826d48dce45a0b2c731f
+  revision: 0ed63bcfebead41755854937f3e04097f7a83bf1
   branch: master
   specs:
     spree_i18n (3.3.2)
@@ -545,6 +552,7 @@ DEPENDENCIES
   simplecov (~> 0.16.1)
   spree (~> 3.4.4)
   spree_auth_devise (~> 3.3)
+  spree_blogging_spree!
   spree_digital!
   spree_gateway (~> 3.3)
   spree_globalize!
