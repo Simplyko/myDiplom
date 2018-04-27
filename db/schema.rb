@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180426145123) do
+ActiveRecord::Schema.define(version: 20180427125637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blog_taggings", id: :serial, force: :cascade do |t|
+  create_table "b_taggings", id: :serial, force: :cascade do |t|
     t.integer "tag_id"
     t.string "taggable_type"
     t.integer "taggable_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180426145123) do
     t.integer "tagger_id"
     t.string "context", limit: 128
     t.datetime "created_at"
-    t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "blog_taggings_idx", unique: true
+    t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "b_taggings_idx", unique: true
   end
 
   create_table "blog_tags", id: :serial, force: :cascade do |t|
@@ -104,19 +104,6 @@ ActiveRecord::Schema.define(version: 20180426145123) do
     t.index ["position"], name: "index_spree_assets_on_position"
     t.index ["viewable_id"], name: "index_assets_on_viewable_id"
     t.index ["viewable_type", "type"], name: "index_assets_on_viewable_type_and_type"
-  end
-
-  create_table "spree_blog_entries", id: :serial, force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.string "permalink"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean "visible", default: false
-    t.datetime "published_at"
-    t.text "summary"
-    t.integer "author_id"
-    t.index ["author_id"], name: "index_spree_blog_entries_on_author_id"
   end
 
   create_table "spree_blogging_entries", id: :serial, force: :cascade do |t|
@@ -1295,10 +1282,6 @@ ActiveRecord::Schema.define(version: 20180426145123) do
     t.string "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
-    t.string "nickname"
-    t.string "website_url"
-    t.string "google_plus_url"
-    t.text "bio_info"
     t.index ["bill_address_id"], name: "index_spree_users_on_bill_address_id"
     t.index ["deleted_at"], name: "index_spree_users_on_deleted_at"
     t.index ["email"], name: "email_idx_unique", unique: true
@@ -1353,22 +1336,6 @@ ActiveRecord::Schema.define(version: 20180426145123) do
     t.string "kind"
     t.index ["default_tax"], name: "index_spree_zones_on_default_tax"
     t.index ["kind"], name: "index_spree_zones_on_kind"
-  end
-
-  create_table "taggings", id: :serial, force: :cascade do |t|
-    t.integer "tag_id"
-    t.string "taggable_type"
-    t.integer "taggable_id"
-    t.string "tagger_type"
-    t.integer "tagger_id"
-    t.string "context", limit: 128
-    t.datetime "created_at"
-    t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true
-  end
-
-  create_table "tags", id: :serial, force: :cascade do |t|
-    t.string "name"
-    t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
 end

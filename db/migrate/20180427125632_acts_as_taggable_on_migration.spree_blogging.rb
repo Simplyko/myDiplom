@@ -5,7 +5,7 @@ class ActsAsTaggableOnMigration < ActiveRecord::Migration[4.2]
       t.string :name
     end
 
-    create_table :blog_taggings do |t|
+    create_table :b_taggings do |t|
       t.references :tag
 
       # You should make sure that the column created is
@@ -20,12 +20,12 @@ class ActsAsTaggableOnMigration < ActiveRecord::Migration[4.2]
       t.datetime :created_at
     end
 
-    add_index :taggings, :tag_id
-    add_index :taggings, [:taggable_id, :taggable_type, :context]
+    add_index :b_taggings, :tag_id
+    add_index :b_taggings, [:taggable_id, :taggable_type, :context]
   end
 
   def self.down
-    drop_table :taggings
-    drop_table :tags
+    drop_table :b_taggings
+    drop_table :blog_tags
   end
 end

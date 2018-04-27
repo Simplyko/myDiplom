@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/ilya-bez/spree_blogging.git
-  revision: 69dfae39e9afd0bf4ebfe2e55054806e7e88f8f3
+  revision: 542559da19597b5ffe8b75cdbd0004e40d41d76e
   specs:
     spree_blogging (0.0.1.alpha)
       spree_core (>= 3.1.0, < 4.0)
