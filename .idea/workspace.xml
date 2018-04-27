@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02d76f35-74a6-40d7-b024-641cbcf8f2f5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/DESCRIPTION.en_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/METADATA.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/Nunito-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/Nunito-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/Nunito-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/nunito/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/COPYRIGHT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/METADATA.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-Semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/Open-Sans-and-Nunito/opensans/OpenSans-SemiboldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myDiplom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myDiplom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/landing.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/landing.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/spree/orders/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/spree/orders/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/spree/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/spree/shared/_footer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/spree/shared/_main_nav_bar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/spree/shared/_main_nav_bar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/spree/frontend/frontend_bootstrap.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/spree/frontend/frontend_bootstrap.css.scss" afterDir="false" />
-    </list>
+    <list default="true" id="02d76f35-74a6-40d7-b024-641cbcf8f2f5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -434,23 +405,22 @@
       <workItem from="1524657320579" duration="14048000" />
       <workItem from="1524694179030" duration="2387000" />
       <workItem from="1524742236222" duration="13137000" />
-      <workItem from="1524766513100" duration="20858000" />
+      <workItem from="1524766513100" duration="21339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110956000" />
+    <option name="totallyTimeSpent" value="111437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5002764" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50082916" side_tool="true" visible="true" weight="0.67349136" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3297414" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.0" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4997236" weight="0.51077586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4991708" visible="true" weight="0.67349136" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
