@@ -25,12 +25,12 @@
             <%= render partial: 'form', locals: { order_form: order_form } %>
           </div>
 
-          <div class="links col-md-3 navbar-form pull-right text-right" data-hook="cart_buttons">
+          <div class="links col-md-3 pull-right text-right" data-hook="cart_buttons">
             <div class="form-group">
               <%= button_tag class: 'btn btn-primary', id: 'update-button' do %>
                 <%= Spree.t(:update) %>
               <% end %>
-              <%= button_tag class: 'btn btn-lg btn-success', id: 'checkout-link', name: 'checkout' do %>
+              <%= button_tag class: 'btn btn-success', id: 'checkout-link', name: 'checkout' do %>
                 <%= Spree.t(:checkout) %>
               <% end %>
             </div>
