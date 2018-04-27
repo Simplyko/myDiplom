@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -40,11 +40,14 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'simplecov', '~> 0.16.1'
   gem 'capybara', '~> 2.18'
-  gem 'capybara-webkit', '~> 1.15'
+  gem 'capybara-webkit', '~> 1.15.0'
   gem 'capybara-screenshot', '~> 1.0', '>= 1.0.18'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2' 
   gem 'factory_bot', '~> 4.8', '>= 4.8.2'
+  gem 'rspec', '~> 3.7'
+  gem 'ffaker', '~> 2.9.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
@@ -60,14 +63,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'simple_enum', '~> 2.3', '>= 2.3.1'
-gem 'pundit', '~> 1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
-gem 'elasticsearch', '~> 6.0', '>= 6.0.2'
-gem 'rspec', '~> 3.7'
-gem 'faker', '~> 1.8', '>= 1.8.7'
-gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 
 #Diplom gems
@@ -76,5 +73,14 @@ gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'bootstrap', '~>4.1.0'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+gem "letter_opener", :group => :development
 gem 'rmagick', '~> 2.16'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: 'master'
+gem 'paperclip'
+gem 'spree_digital', github: 'spree-contrib/spree_digital'
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+gem 'globalize', github: 'globalize/globalize'
+gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'

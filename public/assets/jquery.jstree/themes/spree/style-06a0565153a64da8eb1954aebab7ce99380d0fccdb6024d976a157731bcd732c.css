@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*
+ * jsTree Spree theme 1.0
+ */
+/* line 8, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree li, .jstree-spree li ul {
+  border-color: #ededed;
+  border-style: solid;
+}
+/* line 13, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree li {
+  margin-left: 26px;
+  border-width: 0 0 1px 0;
+}
+/* line 17, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree li:last-of-type {
+  border-bottom-width: 0;
+}
+/* line 21, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree li ul {
+  border-width: 1px 0 0 0;
+}
+/* line 26, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree ins {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  line-height: 1;
+  height: 38px;
+  vertical-align: middle;
+  font-family: 'Glyphicons Halflings';
+  color: #555;
+}
+/* line 36, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree ins:before {
+  position: absolute;
+  top: 12px;
+  padding-left: 4px;
+  font-size: 12px;
+}
+/* line 44, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-open > ins:before {
+  content: "";
+}
+/* line 46, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-closed > ins:before {
+  content: "";
+}
+/* line 48, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-leaf > ins {
+  background-position: -36px 0;
+}
+/* line 52, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-locked a {
+  color: silver;
+  cursor: default;
+}
+/* line 57, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a {
+  line-height: 38px;
+  height: 38px;
+  padding: 0;
+  color: #555;
+  cursor: context-menu;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+/* line 67, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a.jstree-search {
+  color: aqua;
+}
+/* line 71, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a.jstree-loading .jstree-icon {
+  background: url(/assets/jquery.jstree/themes/spree/throbber-4e4d43ccac9f0ed6eb6f48ea2b00e10a578b68df0e162df6c4c19d2c9725c04b.gif) center center no-repeat !important;
+}
+/* line 74, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a.jstree-loading .jstree-icon:before {
+  content: "";
+}
+/* line 77, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a .jstree-icon {
+  vertical-align: middle;
+  font-family: 'Glyphicons Halflings';
+  line-height: 20px;
+  width: 20px;
+  height: 24px;
+  text-align: center;
+  margin-right: 8px;
+  pointer-events: none;
+}
+/* line 87, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree a .jstree-icon:before {
+  content: "\e118";
+  top: 1px;
+  padding-left: 0;
+}
+/* line 95, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-rename-input {
+  height: 38px !important;
+  line-height: 38px !important;
+  left: 46px !important;
+  padding: 0 5px !important;
+}
+/* line 102, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-hovered {
+  background: #e7f4f9;
+  border: 1px solid #d8f0fa;
+  padding: 0 3px 0 1px;
+  text-shadow: 1px 1px 1px silver;
+}
+/* line 109, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-clicked {
+  background: #beebff;
+  border: 1px solid #99defd;
+  padding: 0 3px 0 1px;
+}
+/* line 115, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-dots li,
+.jstree-spree .jstree-no-dots .jstree-leaf > ins {
+  background: transparent;
+}
+/* line 120, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-dots .jstree-open > ins {
+  background-position: -18px 0;
+}
+/* line 124, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-dots .jstree-closed > ins {
+  background-position: 0 0;
+}
+/* line 128, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-icons a .jstree-icon {
+  display: none;
+}
+/* line 132, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-search {
+  font-style: italic;
+}
+/* line 136, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-icons .jstree-checkbox {
+  display: inline-block;
+}
+/* line 140, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-no-checkboxes .jstree-checkbox {
+  display: none !important;
+}
+/* line 144, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-checked > a > .jstree-checkbox {
+  background-position: -38px -19px;
+}
+/* line 148, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-unchecked > a > .jstree-checkbox {
+  background-position: -2px -19px;
+}
+/* line 152, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-undetermined > a > .jstree-checkbox {
+  background-position: -20px -19px;
+}
+/* line 156, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-checked > a > .checkbox:hover {
+  background-position: -38px -37px;
+}
+/* line 160, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-unchecked > a > .jstree-checkbox:hover {
+  background-position: -2px -37px;
+}
+/* line 164, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+.jstree-spree .jstree-undetermined > a > .jstree-checkbox:hover {
+  background-position: -20px -37px;
+}
+
+/* line 169, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-dragged.jstree-spree ins {
+  background: transparent !important;
+}
+
+/* line 173, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context {
+  background: #fbfbfb;
+  border: 1px solid #eee;
+  margin-top: 15px;
+  margin-left: -4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+/* line 184, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context li ins {
+  display: none;
+}
+/* line 185, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context li a {
+  line-height: 38px;
+}
+/* line 188, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context a {
+  color: #555;
+}
+/* line 190, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context a:hover,
+#vakata-contextmenu.jstree-spree-context .vakata-hover > a {
+  color: inherit;
+  padding: 0 5px;
+  background: #ededed;
+  border: 1px solid #ededed;
+  border-radius: 2px;
+}
+/* line 200, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context li.jstree-contextmenu-disabled a,
+#vakata-contextmenu.jstree-spree-context li.jstree-contextmenu-disabled a:hover {
+  color: silver;
+  background: transparent;
+  border: 0;
+  padding: 1px 4px;
+}
+/* line 208, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context li.vakata-separator {
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+/* line 214, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/vendor/assets/stylesheets/jquery.jstree/themes/spree/style.scss */
+#vakata-contextmenu.jstree-spree-context .icon {
+  margin: 0 10px 0 5px;
+}
