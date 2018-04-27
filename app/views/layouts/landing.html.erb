@@ -34,7 +34,7 @@
                 <%= image_tag product.images.first.attachment.url(:large), class: "img-responsive img-carousel"%>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <h1><%= image_tag (product.images.first.attachment.url(:large)) %> </h1>
+                <h1><%= link_to product.name, product_path(product.id) %> </h1>
                 <h3><%= product.description %></h3>
                 <h3><%= product.avg_rating %></h3>
               </div>
