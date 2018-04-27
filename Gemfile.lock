@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/globalize/globalize.git
-  revision: 55c9c7a6d94f5707c3ff72a318498c8c125287b1
+  revision: 8a193c1272c3640e516ef36ac78e5d634152d3a5
   specs:
     globalize (5.1.0)
-      activemodel (>= 4.2, < 5.2)
-      activerecord (>= 4.2, < 5.2)
+      activemodel (>= 4.2, < 5.3)
+      activerecord (>= 4.2, < 5.3)
       request_store (~> 1.0)
 
 GIT
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_globalize.git
-  revision: 3986112f829ec58d75630731424b86d8314ca12e
+  revision: 3bc3a6f877c042d88015809ed1720443601c83a9
   branch: master
   specs:
     spree_globalize (3.3.1)
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
-  revision: 1303512023b11add2f0ec75be748f65fdfc9721d
+  revision: 94043a4b27be76249a1d826d48dce45a0b2c731f
   branch: master
   specs:
     spree_i18n (3.3.2)
@@ -141,7 +141,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
-    autoprefixer-rails (8.3.0)
+    autoprefixer-rails (8.3.0.1)
       execjs
     awesome_nested_set (3.1.4)
       activerecord (>= 4.0.0, < 5.3)
@@ -353,9 +353,9 @@ GEM
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
     rmagick (2.16.0)
-    routing-filter (0.6.1)
-      actionpack (>= 4.2, < 5.2)
-      activesupport (>= 4.2, < 5.2)
+    routing-filter (0.6.2)
+      actionpack (>= 4.2, < 6)
+      activesupport (>= 4.2, < 6)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
