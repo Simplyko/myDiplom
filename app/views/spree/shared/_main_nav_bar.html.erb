@@ -2,22 +2,16 @@
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
       <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
-      <li id="home-link" data-hook><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
-        <ul class="dropdown-menu my-dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-      </li>
+      <li><%= link_to "Blog", spree.blog_path %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right" data-hook>
-      <li id="search-bar" data-hook>
-        <%= render partial: 'spree/shared/search' %>
+      <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to_cart %>
+        </noscript>
+        &nbsp;
       </li>
+      <script>Spree.fetch_cart()</script>
     </ul>
   </div>
 </nav>
