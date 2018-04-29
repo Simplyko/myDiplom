@@ -23,10 +23,11 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions:
     
-    bundle exec rails g spree:install --sample=false
-    bundle exec rake spree_auth:admin:create
-    rails g spree_gateway:install
-    bundle exec rails g spree_reviews:install
-    bundle exec rails g spree_multi_currency:install
+  *  bundle exec rails g spree:install --sample=false
+  *  bundle exec rake spree_auth:admin:create
+  *  rails g spree_gateway:install
+  *  bundle exec rails g spree_reviews:install
+  *  bundle exec rails g spree_multi_currency:install
+

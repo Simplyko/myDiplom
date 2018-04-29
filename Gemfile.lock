@@ -44,7 +44,8 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
-  revision: 0ed63bcfebead41755854937f3e04097f7a83bf1
+  revision: 94043a4b27be76249a1d826d48dce45a0b2c731f
+
   branch: master
   specs:
     spree_i18n (3.3.2)
@@ -318,7 +319,7 @@ GEM
       activemodel (= 5.1.6)
       activerecord (= 5.1.6)
       activesupport (= 5.1.6)
-      bundler (>= 1.3.0)
+      bundler (= 1.16.1)
       railties (= 5.1.6)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
@@ -549,7 +550,7 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers (~> 3.1, >= 3.1.2)
   simple_form (~> 3.5, >= 3.5.1)
-  simplecov (~> 0.16.1)
+  simplecov
   spree (~> 3.4.4)
   spree_auth_devise (~> 3.3)
   spree_blogging_spree!
@@ -567,6 +568,9 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.1
