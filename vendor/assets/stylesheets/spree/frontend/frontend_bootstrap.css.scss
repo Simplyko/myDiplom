@@ -1,0 +1,315 @@
+@import "bootstrap-sprockets";
+@import "variables";
+@import "bootstrap";
+
+#spree-header {
+  background-color: #5680E9;
+  margin-bottom: $line-height-computed;
+  //margin-bottom: 0px;
+
+  #header {
+    background-color: #000424;
+  }
+
+  #logo {
+    margin-bottom: 0px;
+
+    img {
+      max-width: 100%;
+      max-height: 50px;
+    }
+  }
+
+  .nav a {
+    color: white;
+
+    &:hover, &:focus {
+      background: rgba($gray-darker, 0.4);
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+
+#spree-footer {
+  background: #000424;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  color: white;
+}
+
+// -- Spree Layout Custom Rules -------------------------
+
+.alert-notice { @extend .alert-success; }
+.alert-error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+
+.product-body {
+  height: 170px;
+}
+
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+// Center cart line items
+table {
+  &.table > tbody > tr {
+    &.line-item td, &.stock-item td {
+      vertical-align: middle;
+    }
+  }
+
+  &#line-items {
+    > tbody, > tfoot {
+      > tr > td {
+        vertical-align: middle;
+
+        &.order-qty {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Footer links
+#footer-left a {
+  color: lighten($brand-primary, 20);
+
+  &:hover {
+    color: lighten($brand-primary, 10);
+  }
+}
+
+// Updated credit-card image
+#credit-card-image {
+  margin-top: -10px;
+}
+
+.existing-credit-card-list td {
+  padding: 5px;
+}
+
+.save-user-address-wrapper {
+  display: inline-block;
+}
+
+.btn-success {
+    color: #FFFFFF;
+    background-color: #000424;
+    border-color: #000424;
+}
+
+.btn-success:hover {
+  color: #FFFFFF;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+  color: #FFFFFF;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+.btn-success, .btn.action-capture {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 11, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success:focus, .btn.action-capture:focus, .btn-success.focus, .focus.btn.action-capture {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 17, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success:hover, .btn.action-capture:hover {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 22, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success:active, .btn.action-capture:active, .btn-success.active, .active.btn.action-capture, .open > .btn-success.dropdown-toggle, .open > .dropdown-toggle.btn.action-capture {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 29, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success:active:hover, .btn.action-capture:active:hover, .btn-success:active:focus, .btn.action-capture:active:focus, .btn-success:active.focus, .btn.action-capture:active.focus, .btn-success.active:hover, .active.btn.action-capture:hover, .btn-success.active:focus, .active.btn.action-capture:focus, .btn-success.active.focus, .active.focus.btn.action-capture, .open > .btn-success.dropdown-toggle:hover, .open > .dropdown-toggle.btn.action-capture:hover, .open > .btn-success.dropdown-toggle:focus, .open > .dropdown-toggle.btn.action-capture:focus, .open > .btn-success.dropdown-toggle.focus, .open > .dropdown-toggle.focus.btn.action-capture {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 37, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success:active, .btn.action-capture:active, .btn-success.active, .active.btn.action-capture, .open > .btn-success.dropdown-toggle, .open > .dropdown-toggle.btn.action-capture {
+  background-image: none;
+}
+
+/* line 45, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success.disabled:hover, .disabled.btn.action-capture:hover, .btn-success.disabled:focus, .disabled.btn.action-capture:focus, .btn-success.disabled.focus, .disabled.focus.btn.action-capture, .btn-success[disabled]:hover, [disabled].btn.action-capture:hover, .btn-success[disabled]:focus, [disabled].btn.action-capture:focus, .btn-success[disabled].focus, [disabled].focus.btn.action-capture, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn.action-capture:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn.action-capture:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .focus.btn.action-capture {
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 53, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-success .badge, .btn.action-capture .badge {
+  color: #000424;
+  background-color: #fff;
+}
+
+/* line 71, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_buttons.scss */
+.btn-primary, .btn.payment-action-edit {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 11, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary:focus, .btn.payment-action-edit:focus, .btn-primary.focus, .focus.btn.payment-action-edit {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 17, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary:hover, .btn.payment-action-edit:hover {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 22, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary:active, .btn.payment-action-edit:active, .btn-primary.active, .active.btn.payment-action-edit, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.btn.payment-action-edit {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 29, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary:active:hover, .btn.payment-action-edit:active:hover, .btn-primary:active:focus, .btn.payment-action-edit:active:focus, .btn-primary:active.focus, .btn.payment-action-edit:active.focus, .btn-primary.active:hover, .active.btn.payment-action-edit:hover, .btn-primary.active:focus, .active.btn.payment-action-edit:focus, .btn-primary.active.focus, .active.focus.btn.payment-action-edit, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.btn.payment-action-edit:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.btn.payment-action-edit:focus, .open > .btn-primary.dropdown-toggle.focus, .open > .dropdown-toggle.focus.btn.payment-action-edit {
+  color: #fff;
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 37, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary:active, .btn.payment-action-edit:active, .btn-primary.active, .active.btn.payment-action-edit, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.btn.payment-action-edit {
+  background-image: none;
+}
+
+/* line 45, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary.disabled:hover, .disabled.btn.payment-action-edit:hover, .btn-primary.disabled:focus, .disabled.btn.payment-action-edit:focus, .btn-primary.disabled.focus, .disabled.focus.btn.payment-action-edit, .btn-primary[disabled]:hover, [disabled].btn.payment-action-edit:hover, .btn-primary[disabled]:focus, [disabled].btn.payment-action-edit:focus, .btn-primary[disabled].focus, [disabled].focus.btn.payment-action-edit, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn.payment-action-edit:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn.payment-action-edit:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .focus.btn.payment-action-edit {
+  background-color: #000424;
+  border-color: #000424;
+}
+
+/* line 53, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-primary .badge, .btn.payment-action-edit .badge {
+  color: #000424;
+  background-color: #fff;
+}
+
+/* line 12, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_pagination.scss */
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 8px 16px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  color: #5680E9;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+/* line 41, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_pagination.scss */
+.pagination > li > a:hover, .pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #5680E9;
+  background-color: #eeeeee;
+  border-color: #ddd;
+}
+
+/* line 52, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_pagination.scss */
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #5680E9;
+  border-color: #5680E9;
+  cursor: default;
+}
+
+/* line 131, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navs.scss */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #5680E9;
+}
+
+/* line 41, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_badges.scss */
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  color: #5680E9;
+  background-color: #fff;
+}
+
+/* line 68, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/spree_backend-3.4.5/app/assets/stylesheets/spree/backend/components/_sidebar.scss */
+#main-sidebar ul.nav.nav-pills li.selected a {
+  color: #5680E9;
+}
+
+/* line 5, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.text-primary {
+  color: #000424;
+}
+
+/* line 8, /home/vkonceropyatov/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #000424;
+}
+
+a {
+  color: #000424;
+  text-decoration: none;
+}
+
+@media screen {
+  .carousel {
+    height: 500px !important;
+  }
+
+  .carousel-inner img {
+    height: 400px !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:767px) {
+  .carousel {
+    height: 700px !important;
+  }
+
+  .carousel-inner img {
+    height: 100px !important;
+    margin: 0 auto;
+  }
+}
