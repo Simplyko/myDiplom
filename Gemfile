@@ -49,6 +49,7 @@ group :development, :test do
   gem 'rspec', '~> 3.7'
   gem 'ffaker', '~> 2.9.0'
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  gem 'rspec-activemodel-mocks'
 end
 
 group :development do
@@ -69,7 +70,7 @@ gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 
 #Diplom gems
-
+gem 'redis', '~> 3.3', '>= 3.3.1'
 gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'

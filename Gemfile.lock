@@ -45,7 +45,6 @@ GIT
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
   revision: 94043a4b27be76249a1d826d48dce45a0b2c731f
-
   branch: master
   specs:
     spree_i18n (3.3.2)
@@ -347,6 +346,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redis (3.3.5)
     request_store (1.4.1)
       rack (>= 1.4)
     responders (2.4.0)
@@ -360,6 +360,10 @@ GEM
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
+    rspec-activemodel-mocks (1.0.3)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -543,8 +547,10 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
+  redis (~> 3.3, >= 3.3.1)
   rmagick (~> 2.16)
   rspec (~> 3.7)
+  rspec-activemodel-mocks
   rspec-rails (~> 3.4, >= 3.4.2)
   sass-rails (~> 5.0)
   selenium-webdriver

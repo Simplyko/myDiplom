@@ -14,3 +14,4 @@
 //= require spree/frontend/spree_reviews
 //= require spree/frontend/spree_multi_currency
 
+//= require spree/frontend/spree_auth
