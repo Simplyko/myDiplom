@@ -30,4 +30,3 @@ Things you may want to cover:
   *  rails g spree_gateway:install
   *  bundle exec rails g spree_reviews:install
   *  bundle exec rails g spree_multi_currency:install
-
