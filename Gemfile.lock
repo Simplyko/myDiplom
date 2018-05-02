@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
-  revision: 94043a4b27be76249a1d826d48dce45a0b2c731f
+  revision: 0ed63bcfebead41755854937f3e04097f7a83bf1
   branch: master
   specs:
     spree_i18n (3.3.2)
@@ -140,13 +140,13 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
-    autoprefixer-rails (8.3.0.1)
+    autoprefixer-rails (8.4.1)
       execjs
     awesome_nested_set (3.1.4)
       activerecord (>= 4.0.0, < 5.3)
     bcrypt (3.1.11)
     bindex (0.5.0)
-    bootstrap (4.1.0)
+    bootstrap (4.1.1)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
@@ -275,7 +275,7 @@ GEM
     minitest (5.11.3)
     monetize (1.7.0)
       money (~> 6.9)
-    money (6.11.0)
+    money (6.11.1)
       i18n (>= 0.6.4, < 1.1)
     multi_json (1.13.1)
     nio4r (2.3.0)
@@ -318,7 +318,7 @@ GEM
       activemodel (= 5.1.6)
       activerecord (= 5.1.6)
       activesupport (= 5.1.6)
-      bundler (= 1.16.1)
+      bundler (>= 1.3.0)
       railties (= 5.1.6)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
@@ -346,7 +346,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    redis (3.3.5)
     request_store (1.4.1)
       rack (>= 1.4)
     responders (2.4.0)
@@ -360,10 +359,6 @@ GEM
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
-    rspec-activemodel-mocks (1.0.3)
-      activemodel (>= 3.0)
-      activesupport (>= 3.0)
-      rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -399,8 +394,6 @@ GEM
     selenium-webdriver (3.11.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
-    shoulda-matchers (3.1.2)
-      activesupport (>= 4.0.0)
     simple_form (3.5.1)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
@@ -512,7 +505,7 @@ GEM
       tzinfo
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.6.1)
+    web-console (3.6.2)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
@@ -547,14 +540,11 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
-  redis (~> 3.3, >= 3.3.1)
   rmagick (~> 2.16)
   rspec (~> 3.7)
-  rspec-activemodel-mocks
   rspec-rails (~> 3.4, >= 3.4.2)
   sass-rails (~> 5.0)
   selenium-webdriver
-  shoulda-matchers (~> 3.1, >= 3.1.2)
   simple_form (~> 3.5, >= 3.5.1)
   simplecov
   spree (~> 3.4.4)
