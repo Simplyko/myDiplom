@@ -1,44 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <%= render partial: 'spree/shared/head' %>
-  </head>
-  <body class="landing">
-    <nav>
-      <header id="header" data-hook>
-        <div class="container">
-          <div class="row">
-            <figure id="logo" class="col-md-4 col-sm-3 col-xs-10" data-hook>
-              <%= logo %>
-            </figure>
-            <div class="navbar col-md-8 col-sm-9 col-xs-2" id="top-nav-bar">
-              <ul id="nav-bar" class="nav navbar-nav navbar-right" data-hook>
-                <li id="home-link" data-hook><%= link_to Spree.t(:store), spree.products_path %></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-    </nav>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <% Spree::Product.all.order("avg_rating DESC").limit(5).each_with_index do |product, index| %>
+        <% @avg_rating_products.each_with_index do |product, index| %>
           <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : '' %>"></li>
         <% end %>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <% Spree::Product.all.order("avg_rating DESC").limit(5).each_with_index do |product, index| %>
+        <% @avg_rating_products.each_with_index do |product, index| %>
           <div class="item <%= index == 0 ? 'active' : '' %>">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                 <%= image_tag product.images.first.attachment.url(:large), class: "img-responsive img-carousel"%>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <h1><%= link_to product.name, product_path(product.id) %> </h1>
+                <h1><%= link_to product.name, spree.product_path(product) %> </h1>
                 <h3><%= product.description %></h3>
+
                 <span title="<%= pluralize(product.avg_rating, 'star') %> <%= Spree.t(:out_of_5) %>">
                   <%= render 'spree/reviews/stars', stars: product.avg_rating %>
                 </span>
+
+                <div class="panel-footer text-center">
+        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <span class="price selling lead" itemprop="price" content="<%= (product.price_in(current_currency).amount.nil?)? 0 : product.price_in(current_currency).amount.to_d %>">
+            <%= display_price(product) %>
+          </span>
+          <span itemprop="priceCurrency" content="<%= current_currency %>"></span>
+        </span>
+        </div>
+                
               </div>
             </div>
           </div>
@@ -53,5 +42,3 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </body>
-</html>
