@@ -1,5 +1,7 @@
 Spree::HomeController.class_eval do
 
-      layout 'landing'
-
+       layout 'spree/layouts/spree_application'
+      def index
+            @avg_rating_products = Spree::Product.avgrating
+      end
 end
