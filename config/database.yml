@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: myDiplom_production
-  username: myDiplom
+  username: vkonceropyatov
   password: <%= ENV['MYDIPLOM_DATABASE_PASSWORD'] %>
