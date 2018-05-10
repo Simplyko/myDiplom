@@ -86,4 +86,4 @@ production:
   <<: *default
   database: myDiplom_production
   username: vkonceropyatov
-  password: <%= ENV['MYDIPLOM_DATABASE_PASSWORD'] %>
+  password: 80956325669pzdC
