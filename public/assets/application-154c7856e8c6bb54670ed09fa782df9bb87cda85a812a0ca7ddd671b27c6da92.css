@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "opensans";
+  src: url("Open-Sans-and-Nunito/opensans/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "nunito";
+  src: url("Open-Sans-and-Nunito/nunito/Nunito-Regular.ttf");
+}
+/* line 11, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+h1 {
+  font-family: 'opensans';
+}
+
+/* line 15, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'nunito';
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 21, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+html, body {
+  height: 100%;
+}
+
+@media screen {
+  /* line 26, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+  .img-carousel {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  /* line 32, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+  .img-carousel {
+    text-align: center;
+  }
+}
+/* line 37, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+.page-content {
+  flex: 1 0 auto;
+}
+
+/* line 41, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+#spree-footer {
+  flex-shrink: 0;
+}
+
+/* line 45, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+.my-footer {
+  background-color: #000242;
+}
+
+/* line 49, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+.landing {
+  background: linear-gradient(to bottom, #d8d8d8, #525b62);
+}
+
+/* line 53, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+#logo {
+  margin-bottom: 0px;
+}
+/* line 56, /home/vkonceropyatov/myDiplom/app/assets/stylesheets/custom.scss */
+#logo img {
+  max-width: 100%;
+  max-height: 50px;
+}
