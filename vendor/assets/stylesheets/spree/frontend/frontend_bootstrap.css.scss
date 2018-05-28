@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "variables";
+
+
+
 @import "bootstrap";
+
+.landing {
+  background: linear-gradient(to bottom, #d8d8d8, #525b62);
+}
 
 #spree-header {
   background-color: #5680E9;

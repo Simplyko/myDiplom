@@ -7,7 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/backend
-
+//= require bootstrap-sprockets
 //= require_tree .
 
 //= require spree/backend/spree_reviews

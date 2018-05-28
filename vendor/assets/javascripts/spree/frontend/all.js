@@ -8,7 +8,7 @@
 //= require jquery_ujs
 //= require accounting.min
 //= require spree/frontend
-
+//= require bootstrap-sprockets
 //= require_tree .
 
 //= require spree/frontend/spree_reviews

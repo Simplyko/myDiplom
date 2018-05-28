@@ -72,6 +72,7 @@ gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'bootstrap', '~>4.1.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 gem "letter_opener", :group => :development
 gem 'rmagick', '~> 2.16'

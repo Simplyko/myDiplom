@@ -520,6 +520,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.1.0)
+  bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
   capybara (~> 2.18)
   capybara-screenshot (~> 1.0, >= 1.0.18)
