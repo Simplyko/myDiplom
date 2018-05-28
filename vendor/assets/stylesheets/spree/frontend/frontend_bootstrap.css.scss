@@ -1,21 +1,18 @@
 @import "bootstrap-sprockets";
 @import "variables";
-
-
-
 @import "bootstrap";
 
 .landing {
-  background: linear-gradient(to bottom, #d8d8d8, #525b62);
+  background: linear-gradient(to bottom, rgba(253, 254, 255, 0.493), rgb(49, 65, 105));
 }
 
 #spree-header {
-  background-color: #5680E9;
+  background-color: rgb(49, 65, 105);
   margin-bottom: $line-height-computed;
   //margin-bottom: 0px;
 
   #header {
-    background-color: #000424;
+    background-color: #000000;
   }
 
   #logo {
@@ -28,7 +25,7 @@
   }
 
   .nav a {
-    color: white;
+    color: rgb(255, 255, 255);
 
     &:hover, &:focus {
       background: rgba($gray-darker, 0.4);
@@ -301,12 +298,12 @@ a {
 
 @media screen {
   .carousel {
-    height: 500px !important;
+    height: 600px !important;
   }
 
   .carousel-inner img {
     height: 400px !important;
-    margin: 0 auto;
+    margin: 40px 25px 0px;
   }
 }
 
@@ -316,7 +313,7 @@ a {
   }
 
   .carousel-inner img {
-    height: 100px !important;
-    margin: 0 auto;
+    height: 250px !important;
+    margin: 10px auto;
   }
 }
